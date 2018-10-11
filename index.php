@@ -1,4 +1,12 @@
-<?php ?>
+<?php
+
+// Allow the config
+define('__CONFIG__', true);
+
+// Require the Config
+require_once "inc/config.php"
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,23 +15,17 @@
         <link rel="stylesheet" href="css/loginCss.css">
     </head>
     <body>
-
-    <form class="jsLogin" method="post" action="">
-        <div class="email">
-            <p>Email</p>
-            <input class="insertMail" type="email" name="email" placeholder="email@email.com" required="required">
-        </div>
-        <div class="password">
-            <p>Password</p>
-            <input class="insertPassword" type="password" placeholder="Your Password" required="required">
-        </div>
-        <div class="login">
-            <button class="button" type="submit">Login</button>
-        </div>
-    </form>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit-icons.min.js"></script>
+    <div>
+        <?php
+        echo "Hi, you logged in! It is: ";
+        echo date("d M, Y");
+        ?>
+        <p>
+            <a href="login.php">Login</a>
+            <a href="register.php">Register</a>
+        </p>
+    </div>
+    <?php require_once "inc/footer.php";?>
     </body>
 </html>
 
