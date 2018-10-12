@@ -1,0 +1,22 @@
+.email {
+    font-weight: bold;
+}
+
+.password {
+    font-weight: bold;
+}
+
+button {
+    margin-top: 15px;
+}
+
+.jsError {
+    background-color: #ffc6d7;
+    color: red;
+    margin: 5px;
+    padding: 5px;
+    width: 200px;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+}

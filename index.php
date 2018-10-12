@@ -12,7 +12,7 @@ require_once "inc/config.php"
     <head>
         <meta charset="utf-8"/>
         <title>Login</title>
-        <link rel="stylesheet" href="css/loginCss.css">
+        <link rel="stylesheet" href="assets/css/loginCss.css">
     </head>
     <body>
     <div>

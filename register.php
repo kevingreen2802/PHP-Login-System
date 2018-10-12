@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8"/>
         <title>Login</title>
-        <link rel="stylesheet" href="css/loginCss.css">
+        <link rel="stylesheet" href="assets/css/loginCss.css">
     </head>
     <body>
     <form class="jsRegister" method="post" action="">
@@ -14,10 +14,11 @@
         </div>
         <div class="password">
             <p>Password</p>
-            <input class="insertPassword" type="password" placeholder="Your Password" required="required">
+            <input class="insertPassword" type="password" name="password" placeholder="Your Password" required="required">
         </div>
+        <div class="jsError"></div>
         <div class="login">
-            <button class="button" type="submit">Login</button>
+            <button class="button" type="submit">Register</button>
         </div>
     </form>
     <?php require_once "inc/footer.php";?>
